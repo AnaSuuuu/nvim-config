@@ -23,6 +23,7 @@ require("lazy").setup({
   require("plugins.gitsigns"),    -- unknown 
   require("plugins.treesitter"),  -- treesitter, unknown 
   require("plugins.lsp"),         -- coc
+<<<<<<< HEAD
   require("plugins.telescope"),         -- fzf
   require("plugins.tmux"),
   -- require("plugins.nerd"),
@@ -34,3 +35,7 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+=======
+  -- require("plugins.nerd"),
+})
+>>>>>>> 6ec8c8b0d923c6a5eeb5658c5a18e4372f4384cb

@@ -1,6 +1,9 @@
 vim.o.termguicolors = true
 vim.env.NVIM_TUI_ENABLE_TRUE_COLOR = 1
+<<<<<<< HEAD
 vim.opt.guifont='FiraMono'
+=======
+>>>>>>> 6ec8c8b0d923c6a5eeb5658c5a18e4372f4384cb
 
 local opt = vim.opt
 
