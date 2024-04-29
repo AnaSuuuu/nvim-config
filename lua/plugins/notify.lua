@@ -8,7 +8,7 @@ return {
 			fps = 60,
 			level = 2,
 			minimum_width = 50,
-      render = "compact",
+      -- render = "compact",
 			stages = "slide",
 			timeout = 3000,
 			top_down = true

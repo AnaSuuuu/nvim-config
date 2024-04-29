@@ -18,7 +18,7 @@ require("lazy").setup({
   require("plugins.competitest"), -- used in competition 
   require("plugins.colorscheme"), -- custom the color
   require("plugins.editor"),      -- useful plugins when editing
-  require("plugins.ui"),          -- customied UI  
+  -- require("plugins.ui"),          -- customied UI  
   require("plugins.notify"),      -- notification plug
   require("plugins.gitsigns"),    -- unknown 
   require("plugins.treesitter"),  -- treesitter, unknown 
