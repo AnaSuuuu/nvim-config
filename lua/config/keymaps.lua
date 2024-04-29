@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-<<<<<<< HEAD
 vim.keymap.set("n", "<leader>py", vim.cmd.Ex)
 local mode_n    = { "n" }
 local mode_v    = { "v" }
@@ -25,7 +24,7 @@ for _, mapping in ipairs(nmappings) do
 end
 
 
-=======
+-- =======
 local mode_nv = { "n", "v" }
 local mode_n = { "n" }
 local mode_v = { "v" }
@@ -70,4 +69,3 @@ local nmappings = {
 for _, mapping in ipairs(nmappings) do
 	vim.keymap.set(mapping.mode or "n", mapping.from, mapping.to, { noremap = true })
 end
->>>>>>> 6ec8c8b0d923c6a5eeb5658c5a18e4372f4384cb
