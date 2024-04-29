@@ -58,50 +58,50 @@ return {
 			})
 		end
 	},
-	{
-		'akinsho/bufferline.nvim',
-		version = "*",
-		dependencies = {
-			'nvim-tree/nvim-web-devicons',
-			'ryanoasis/vim-devicons',
-		},
-		opts = {
-			options = {
-				mode = "tabs",
-				indicator = {
-					icon = '▎', -- this should be omitted if indicator style is not 'icon'
-					-- style = 'icon' | 'underline' | 'none',
-					style = "icon",
-				},
-				diagnostics_indicator = function(count, level)
-					local icon = level:match("error") and " " or " "
-					return " " .. icon .. count
-				end,
-				numbers = function(opts)
-					local NumberIcon = {
-						"❶ ",
-						"❷ ",
-						"❸ ",
-						"❹ ",
-						"❺ ",
-						"❻ ",
-						"❼ ",
-						"❽ ",
-						"❾ ",
-						"❿ ",
-					}
-					return NumberIcon[tonumber(opts.ordinal)]
-				end,
-				show_buffer_close_icons = false,
-				show_close_icon = false,
-				show_duplicate_prefix = false,
-				tab_size = 10,
-				enforce_regular_tabs = false,
-				padding = 0,
-				separator_style = "thick",
-			}
-		}
-	},
+--	{
+--		'akinsho/bufferline.nvim',
+--		version = "*",
+--		dependencies = {
+--			'nvim-tree/nvim-web-devicons',
+--			'ryanoasis/vim-devicons',
+--		},
+--		opts = {
+--			options = {
+--				mode = "tabs",
+--				indicator = {
+--					icon = '▎', -- this should be omitted if indicator style is not 'icon'
+--					-- style = 'icon' | 'underline' | 'none',
+--					style = "icon",
+--				},
+--				diagnostics_indicator = function(count, level)
+--					local icon = level:match("error") and " " or " "
+--					return " " .. icon .. count
+--				end,
+--				numbers = function(opts)
+--					local NumberIcon = {
+--						"❶ ",
+--						"❷ ",
+--						"❸ ",
+--						"❹ ",
+--						"❺ ",
+--						"❻ ",
+--						"❼ ",
+--						"❽ ",
+--						"❾ ",
+--						"❿ ",
+--					}
+--					return NumberIcon[tonumber(opts.ordinal)]
+--				end,
+--				show_buffer_close_icons = false,
+--				show_close_icon = false,
+--				show_duplicate_prefix = false,
+--				tab_size = 10,
+--				enforce_regular_tabs = false,
+--				padding = 0,
+--				separator_style = "thick",
+--			}
+--		}
+--	},
 	{
 		"nvim-lualine/lualine.nvim",
 		options = { theme = "horizon" },

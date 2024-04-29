@@ -25,6 +25,9 @@ require("lazy").setup({
   require("plugins.lsp"),         -- coc
   require("plugins.telescope"),         -- fzf
   require("plugins.tmux"),
+  require("plugins.fun"),
+  require("plugins.statusline"),
+  require("plugins.tabline"),
   -- require("plugins.nerd"),
 })
 

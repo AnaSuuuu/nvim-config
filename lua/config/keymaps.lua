@@ -18,6 +18,14 @@ local nmappings = {
   { from = "L",                to = "$",                                                           mode = mode_nv },
   -- coc.explorer
   { from = "tt",                to = "<Cmd>CocCommand explorer<CR>",                                                           mode = mode_nv },
+
+  -- Tab management
+	{ from = "tn",            to = ":tabe<CR>", },
+	{ from = "tN",            to = ":tab split<CR>", },
+	{ from = "th",            to = ":-tabnext<CR>", },
+	{ from = "tl",            to = ":+tabnext<CR>", },
+	{ from = "tmh",           to = ":-tabmove<CR>", },
+	{ from = "tml",           to = ":+tabmove<CR>", },
 }
 for _, mapping in ipairs(nmappings) do
   vim.keymap.set(mapping.mode or "n", mapping.from, mapping.to, { noremap = true })
@@ -53,8 +61,6 @@ keymap.set("n", "<C-H>", ":bprevious<CR>")
 
 
 local nmappings = {
-	{ from = "S",             to = ":w<CR>" },
-	{ from = "Q",             to = ":q<CR>" },
 	{ from = ";",             to = ":",                                                                   mode = mode_nv },
 	{ from = "Y",             to = "\"+y",                                                                mode = mode_v },
 	{ from = "`",             to = "~",                                                                   mode = mode_nv },
