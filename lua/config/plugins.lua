@@ -27,7 +27,7 @@ require("lazy").setup({
   require("plugins.tmux"),
   require("plugins.fun"),
   require("plugins.statusline"),
-  require("plugins.tabline"),
+  -- require("plugins.tabline"),
   -- require("plugins.nerd"),
 })
 
