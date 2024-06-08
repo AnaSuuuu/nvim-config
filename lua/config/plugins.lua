@@ -1,4 +1,3 @@
-
 -- 官方配置代码
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -14,11 +13,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  -- "Kicamon/gruvbox",
   require("plugins.competitest"), -- used in competition 
   require("plugins.colorscheme"), -- custom the color
   require("plugins.editor"),      -- useful plugins when editing
-  -- require("plugins.ui"),          -- customied UI  
+  require("plugins.ui"),          -- customied UI  
   require("plugins.notify"),      -- notification plug
   require("plugins.gitsigns"),    -- unknown 
   require("plugins.treesitter"),  -- treesitter, unknown 
@@ -27,8 +25,8 @@ require("lazy").setup({
   require("plugins.tmux"),
   require("plugins.fun"),
   require("plugins.statusline"),
-  -- require("plugins.tabline"),
-  -- require("plugins.nerd"),
+  require("plugins.tabline"),
+  require("plugins.nerd"),
 })
 
 -- telescope keymap
