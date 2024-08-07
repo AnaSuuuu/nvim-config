@@ -13,12 +13,13 @@ vim.o.cursorline = true
 vim.o.expandtab = false
 vim.o.tabstop = 4
 vim.o.smarttab = true
-vim.o.shiftwidth = 2
-vim.o.softtabstop = 2
+vim.o.shiftwidth = 4
+vim.o.softtabstop = 4
 vim.o.autoindent = true
 vim.o.list = true
 vim.o.listchars = 'tab:|\\ ,trail:▫'
 vim.o.scrolloff = 4
+vim.o.undofile = true
 vim.o.ttimeoutlen = 0
 vim.o.timeout = false
 vim.o.viewoptions = 'cursor,folds,slash,unix'
@@ -50,8 +51,8 @@ opt.relativenumber = true
 opt.number = true
 
 -- 缩进
-opt.tabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
 
@@ -60,6 +61,7 @@ opt.wrap = false
 
 -- 光标行
 opt.cursorline = true
+
 
 -- 启用鼠标
 opt.mouse:append("a")
