@@ -6,3 +6,9 @@ return {
     vim.cmd([[colorscheme deus]])
   end,
 }
+
+--return { 
+    --"ellisonleao/gruvbox.nvim", 
+    --priority = 1000, 
+    --config = true
+--}
